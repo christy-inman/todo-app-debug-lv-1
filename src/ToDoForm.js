@@ -11,6 +11,7 @@ class ToDoForm extends Component {
 
   handleSubmit = (event) => {
     event.preventDefault()
+    console.log(this.state)
     this.props.addToDo(this.state)
     this.setState({
       title: "",
@@ -47,3 +48,5 @@ class ToDoForm extends Component {
     )
   }
 }
+
+export default ToDoForm
